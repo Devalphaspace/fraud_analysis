@@ -120,12 +120,21 @@ USE_I18N = True
 
 USE_TZ = True
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-#     "http://127.0.0.1:3000",
-#     "http://127.0.0.1:5173",
-#     "http://localhost:5173",
-# ]
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^http://localhost:3000\.com$",
+    r"^http://localhost:8000\.com$",
+    r"^http://127.0.0.1:3000\.com$",
+    r"^http://localhost:5173\.com$",
+    r"^http://127.0.0.1:5173\.com$",
+    r"^http://127.0.0.1:8000\.com$",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173",
+    "http://localhost:5173",
+]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
