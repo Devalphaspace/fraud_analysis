@@ -33,7 +33,7 @@ class DataForgeryView(APIView):
                 if detectedChanges:
                     response = {
                         "status": status.HTTP_200_OK,
-                        "message": 'http://localhost:8000/media/tampered_regions.jpg',
+                        "message": 'https://bajajhealthapi.onrender.com/media/tampered_regions.jpg',
                     }
 
                     return Response(response, status=status.HTTP_200_OK)
