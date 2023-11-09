@@ -6,8 +6,8 @@ from data_manipulation.scripts import data_manipulation_script
 # Create your views here.
 
 class DataManipulationView(APIView):
-    def get(self, request):
-        if request.method == 'GET':
+    def post(self, request):
+        if request.method == 'POST':
             try:
                 originalImage = request.data['original_image']
                 editedImage = request.data['edited_image']
