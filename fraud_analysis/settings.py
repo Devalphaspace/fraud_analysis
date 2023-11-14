@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7+pc0fd!jo9v2g(m$1#+xw**nqcq%$#a5u9dr!5@p!iv6_^tew
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bajajhealthapi.onrender.com','*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -137,7 +137,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://127.0.0.1:5173",
     "http://localhost:5173",
-    'https://assignment-blog-mu.vercel.app',
     'https://64vkf5-3000.csb.app',
 ]
 
